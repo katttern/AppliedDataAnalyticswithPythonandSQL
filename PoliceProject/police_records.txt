@@ -1,0 +1,38 @@
+Question 1: What are the top 10 Zipcodes for 911 & Are Zipcodes 19446 and 19090 present?
+
+Top 10 Zipcodes: 19401, 19464, 19403, 19446, 19406, 19002, 19468, 19046, 19454, and 19090.
+
+Answer: Yes, both 19446 (ranked 4th with 12,828 calls) and 19090 (ranked 10th with 6,999 calls) are present in the top 10 list.
+
+Question 2: What are the top 4 townships (twp) for 911 calls & Which of the following township are not present? -- LOWER POTTSGROVE, NORRISTOWN, HORSHAM, ABINGTON
+
+Top 4 Townships: LOWER MERION (22,886 calls), ABINGTON (16,379 calls), NORRISTOWN (15,421 calls), and UPPER MERION (14,015 calls).
+
+Answer: From this specific list, LOWER POTTSGROVE and HORSHAM are not present in the top 4. (NORRISTOWN and ABINGTON are present).
+
+Question 3: Create new features & What is the most common Reason for a 911 call based on Reason Column? Which comes second?
+To achieve this, the title column was split using the colon (:) delimiter to extract a new Reason column (e.g., separating "EMS: BACK PAINS/INJURY" into "EMS").
+
+Most common reason: EMS (Emergency Medical Services) is the most common reason with 133,234 calls.
+
+Second most common reason: Traffic comes second with 93,400 calls. (Fire is third with 39,909 calls).
+
+Question 4: Plot barchart using matplotlib for 911 calls by Reason & How can you plot the bars horizontally?
+I have generated the bar charts for 911 calls grouped by the Reason column.
+
+Answer: To plot the bars horizontally using pandas/matplotlib, you change the kind parameter in the .plot() method from kind='bar' to kind='barh' (or alternatively, use plt.barh() directly in standard matplotlib).
+
+Question 5: Do data manipulation & Which day got maximum calls for EMS and how many?
+By converting the timeStamp column to datetime objects and extracting the Day of the Week, the data was grouped by the day.
+
+Answer: Friday received the maximum number of EMS calls with exactly 19,938 calls.
+
+Question 6: Create a countplot of the Day of Week column with the hue based on the Reason column & On which day traffic calls were lowest?
+The requested countplot displaying the total calls broken down by Day of the Week with color hues separating the Reason (EMS, Traffic, Fire) has been generated.
+
+Answer: Traffic calls were the lowest on Sunday, logging only 8,847 calls.
+
+Question 7: Create a countplot month wise & Which month saw highest calls for fire?
+Similarly, a countplot grouping the calls by Month and hued by the Reason column was generated.
+
+Answer: June (Month 6) saw the highest number of calls for Fire emergencies with 3,773 calls (narrowly beating August, which had 3,769 calls).
